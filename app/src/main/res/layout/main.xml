@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<!-- Le TabHost qui contient tous les éléments de nos onglets -->
+	<TabHost
+		android:id="@+id/TabHost01"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<!-- TabWidget qui sert à afficher les onglets -->
+			<TabWidget android:id="@android:id/tabs"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+			</TabWidget>
+			<!-- contenu de nos onglets. -->
+			<FrameLayout
+				android:id="@android:id/tabcontent"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<!-- Contenu de l'onglet TODAY -->
+				<ScrollView
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/Today">
+					<TableLayout
+						xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/tbToday"/>
+				</ScrollView>>
+				<!-- Contenu de l'onglet OBJECTS -->
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:id="@+id/Objects">
+					<ListView
+						android:orientation="vertical"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:id="@+id/ListObjects" />
+				</LinearLayout>
+				<!-- Contenu de l'onglet DETAILS -->
+				<ScrollView
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/Details">
+					<!-- Inclusion de l'interface details -->
+					<include
+						android:id="@+id/IncludeLayoutDetails"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						layout="@layout/details_layout">
+					</include>
+				</ScrollView>
+				<!-- Contenu de l'onglet CHARTS -->
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:id="@+id/Charts">
+					<TextView
+						android:text="Ceci est un texte dans l'onglet N°4"
+						android:id="@+id/TextViewCharts"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+					</TextView>
+				</LinearLayout>
+				<!-- Contenu de l'onglet RSS -->
+				<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+							 android:layout_width="fill_parent"
+							 android:id="@+id/fragment_container"
+							 android:layout_height="fill_parent" >
+				</FrameLayout>
+				<!-- Contenu de l'onglet INFO -->
+
+				<ScrollView
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/Info">
+					<!-- Inclusion de l'interface info -->
+					<include
+						android:id="@+id/IncludeLayoutInfo"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						layout="@layout/info_layout">
+					</include>
+				</ScrollView>
+
+			</FrameLayout>
+		</LinearLayout>
+	</TabHost>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="labelcolor">#8970ff</color>
+    <color name="textcolor">#000000</color>
+    <color name="titlecolor">#4210ee</color>
+</resources>

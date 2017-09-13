@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:paddingLeft="10px"
+   android:layout_weight="1"
+    >
+
+   <TextView
+       android:text="Ephemerides\n"
+       android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:textColor="@color/titlecolor"
+      android:shadowColor="#FFFF99"
+      android:layout_weight="1"/>
+
+	<TextView
+		android:id="@+id/tvBuildDate"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:text="Build Date"
+		android:textColor="@color/textcolor"
+		android:textSize="12sp"/>
+
+	<TextView
+        android:text="\nEphemerids computing\nfor Android systems\n"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/textcolor" />
+
+    <TextView
+        android:text="Copyright © J.-P. Liguori 2011-2017\nall rights reserved\n"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/textcolor" />
+
+    <TextView
+        android:text="http://www.ozf.fr/#ephemerides"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/labelcolor" />
+	
+	<TextView
+		android:text="Location" 
+		android:gravity="center_horizontal"
+		android:textSize="12sp"
+		android:paddingTop="10px"
+		android:id="@+id/tvLocation" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+        android:textColor="@color/textcolor" />
+
+</LinearLayout>

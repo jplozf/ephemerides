@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="lblTimeDisplayFont">
+        <item>Regular</item>
+        <item>SF Digital Readout</item>
+        <item>LED 16 Segment</item>
+        <item>LED Simulator</item>
+        <item>Patopian 1986</item>
+    </array>
+    <array name="valTimeDisplayFont">
+        <item>DroidSans.ttf</item>
+        <item>digital-readout.heavy-oblique.ttf</item>
+        <item>led16sgmnt-Italic.ttf</item>
+        <item>LEDSimulator.ttf</item>
+        <item>Patopian1986.ttf</item>
+    </array>
+</resources>

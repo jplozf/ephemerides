@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="lblRSS">
+        <item>Google News</item>
+        <item>Le Journal du Geek</item>
+        <item>Presse-Citron</item>
+        <item>Korben</item>
+        <item>Numerama</item>
+        <item>Le Monde</item>
+        <item>Slate</item>
+        <item>Marmiton</item>
+    </array>
+    <array name="valRSS">
+        <item>https://news.google.fr/news?cf=all&amp;hl=fr&amp;pz=1&amp;ned=fr&amp;output=rss</item>
+        <item>http://feeds2.feedburner.com/LeJournalduGeek</item>
+        <item>https://www.presse-citron.net/feed/</item>
+        <item>https://korben.info/feed</item>
+        <item>http://www.numerama.com/rss/news.rss</item>
+        <item>http://rss.lemonde.fr/c/205/f/3050/index.rss</item>
+        <item>http://www.slate.fr/rss.xml</item>
+        <item>http://www.marmiton.org/rss/recettes-menu-semaine.aspx</item>
+    </array>
+</resources>
